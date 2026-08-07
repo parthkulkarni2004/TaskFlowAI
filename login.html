@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login · TaskFlow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="auth-shell">
+  <div class="auth-panel">
+    <div class="auth-box">
+      <div class="brand"><span class="logo-mark" style="width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--color-primary),#60a5fa);display:flex;align-items:center;justify-content:center;color:#fff;">T</span>TaskFlow</div>
+      <h1>Welcome back!</h1>
+      <p class="sub">Please sign in to your account</p>
+
+      <form data-validate="login" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" name="email" placeholder="john.doe@example.com" required>
+          <span class="hint">Please enter a valid email address.</span>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <div class="input-with-icon">
+            <input type="password" id="loginPassword" name="password" placeholder="••••••••" required>
+            <button type="button" class="toggle-visibility" tabindex="-1">👁</button>
+          </div>
+          <span class="hint">Password is required.</span>
+        </div>
+        <div class="form-links-row mb-4">
+          <label class="checkbox-row"><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+      </form>
+
+      <div class="divider-text">or continue with</div>
+      <button class="btn btn-outline btn-block">🌐 Continue with Google</button>
+
+      <p class="auth-links">Don't have an account? <a href="register.html" style="color:var(--color-primary);font-weight:700">Register</a></p>
+    </div>
+  </div>
+  <div class="auth-illustration">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="illus-content">
+      <h2>Organize work. Ship faster.</h2>
+      <p>TaskFlow brings your projects, tasks and team together in one clean, focused workspace.</p>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
