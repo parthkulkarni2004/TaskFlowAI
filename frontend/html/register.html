@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register · TaskFlow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="auth-shell">
+  <div class="auth-panel">
+    <div class="auth-box">
+      <div class="brand"><span class="logo-mark" style="width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--color-primary),#60a5fa);display:flex;align-items:center;justify-content:center;color:#fff;">T</span>TaskFlow</div>
+      <h1>Create your account</h1>
+      <p class="sub">Join TaskFlow and start managing your tasks</p>
+
+      <form data-validate="register" novalidate>
+        <div class="form-group">
+          <label for="regName">Full Name</label>
+          <input type="text" id="regName" name="fullname" placeholder="John Doe" required>
+          <span class="hint">Please enter your name.</span>
+        </div>
+        <div class="form-group">
+          <label for="regEmail">Email</label>
+          <input type="email" id="regEmail" name="email" placeholder="john.doe@example.com" required>
+          <span class="hint">Please enter a valid email address.</span>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="regPassword">Password</label>
+            <input type="password" id="regPassword" name="password" placeholder="••••••••" data-minlength="6" required>
+            <span class="hint">Min. 6 characters required.</span>
+          </div>
+          <div class="form-group">
+            <label for="regConfirm">Confirm Password</label>
+            <input type="password" id="regConfirm" name="confirm" placeholder="••••••••" data-match="password" required>
+            <span class="hint">Passwords do not match.</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="regRole">Role</label>
+          <select id="regRole" name="role" required>
+            <option value="">Select a role</option>
+            <option>Project Manager</option>
+            <option>Team Member</option>
+            <option>Administrator</option>
+          </select>
+          <span class="hint">Please select a role.</span>
+        </div>
+        <label class="checkbox-row mb-4"><input type="checkbox" required> I agree to the Terms &amp; Conditions</label>
+        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+      </form>
+
+      <p class="auth-links">Already have an account? <a href="login.html" style="color:var(--color-primary);font-weight:700">Sign in</a></p>
+    </div>
+  </div>
+  <div class="auth-illustration">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="illus-content">
+      <h2>Join thousands of teams</h2>
+      <p>Plan sprints, track progress and hit every deadline with a workspace built for modern teams.</p>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
